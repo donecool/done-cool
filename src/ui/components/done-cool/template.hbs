@@ -1,23 +1,21 @@
 <div class="o-container u-mrg-v-10">
-  <div class="o-row">
-    <div class="o-col-8@md o-col-offset-2@md">
+  <div class="o-flexy">
+    <div class="o-flexy__block">
       <h1 class="tx-h3 tx-300">What's done?</h1>
-
-      <ul class="c-list c-list--bullet">
-        {{#each state.items key="@index" as |item index|}}
-          <li><input class="c-input" oninput={{action input index}} value={{item}}></li>
-        {{/each}}
-      </ul>
-
-      <hr>
-
+    </div>
+    <div class="o-flexy__block u-mrg-l-3">
       <h1 class="tx-h3 tx-300">What's cool:</h1>
-
-      <ul class="c-list c-list--bullet">
-        {{#each state.items key="@index" as |item|}}
-          <cool-item @text={{item}} />
-        {{/each}}
-      </ul>
     </div>
   </div>
+
+  {{#each state.items key="@index" as |item index|}}
+    <div class="o-flexy u-mrg-b-2">
+      <div class="o-flexy__block">
+        <input class="c-input" oninput={{action input index}} value={{item}}>
+      </div>
+      <div class="o-flexy__block u-mrg-l-3">
+        <cool-item @text={{item}} />
+      </div>
+    </div>
+  {{/each}}
 </div>
