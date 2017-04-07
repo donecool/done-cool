@@ -1,6 +1,10 @@
 import Component, { tracked } from '@glimmer/component';
 
 export default class CoolItem extends Component {
+  args: {
+    text: string
+  }
+
   @tracked state = {
     text: "",
   }
@@ -15,11 +19,9 @@ export default class CoolItem extends Component {
   }
 
   didUpdate() {
-    let { text } = this.args;
-
     this.state = {
       ...this.state,
-      text
+      text: this.args.text
     };
   }
 };
