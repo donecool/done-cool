@@ -11,7 +11,7 @@
 
   <ul>
     {{#each state.items key="@index" as |item|}}
-      <li>😎 {{item}}</li>
+      <cool-item class="cool-item" @text={{item}} />
     {{/each}}
   </ul>
 </div>
