@@ -1,3 +1,17 @@
 <div>
-  <h1>Welcome to Glimmer!</h1>
+  <h1>What's done?</h1>
+
+  <ul>
+    {{#each state.items key="@index" as |item index|}}
+      <li><input oninput={{action input index}} value={{item}}></li>
+    {{/each}}
+  </ul>
+
+  <hr>
+
+  <ul>
+    {{#each state.items key="@index" as |item|}}
+      <li>😎 {{item}}</li>
+    {{/each}}
+  </ul>
 </div>
