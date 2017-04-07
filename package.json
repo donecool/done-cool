@@ -25,12 +25,14 @@
   },
   "private": true,
   "dependencies": {
+    "seed-grid": "^0.4.0",
     "seed-harvester": "^0.1.5",
     "seed-hr": "^0.0.3",
     "seed-input": "^0.0.7",
     "seed-list": "^0.0.16",
     "seed-packer": "^0.0.10",
     "seed-reset": "^0.1.2",
+    "seed-spacing": "^0.4.3",
     "seed-typography": "^0.4.8"
   }
 }
