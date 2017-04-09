@@ -25,7 +25,7 @@
   },
   "private": true,
   "dependencies": {
-    "seed-flexy": "^0.3.0",
+    "seed-flexy": "^0.3.2",
     "seed-grid": "^0.4.0",
     "seed-harvester": "^0.1.5",
     "seed-input": "^0.0.7",
