@@ -10,9 +10,18 @@ export default class CoolItem extends Component {
   }
 
   @tracked("state")
+
   get emoji() {
-    if (this.state.text.length > 0) {
-      return "😎";
+    let text = this.state.text;
+    if (text.length > 0) {
+      let e = "😎";
+      if (text.includes('horse')) {
+        e = "🐴";
+      }
+      if (text.includes('chicken')) {
+        e = "🐔";
+      }
+      return e;
     } else {
       return "😑";
     }
