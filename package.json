@@ -9,7 +9,7 @@
   "scripts": {
     "build": "ember build",
     "gh-pages": "ember github-pages:commit",
-    "deploy": "npm run build && npm run gh-pages && git push origin gh-pages:gh-pages",
+    "deploy": "npm run build && npm run gh-pages && git push origin gh-pages:gh-pages -f",
     "start": "ember server",
     "test": "ember test"
   },
