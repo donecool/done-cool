@@ -4392,9 +4392,9 @@ seed-dash@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/seed-dash/-/seed-dash-0.0.1.tgz#ff21c0ae63330ec63a8a4e3e0dbf4a6b7a2887a2"
 
-seed-flexy@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/seed-flexy/-/seed-flexy-0.3.0.tgz#99b8a7910ada05be48f84daf8bb4b6edf20935a3"
+seed-flexy@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/seed-flexy/-/seed-flexy-0.3.2.tgz#91d31f03035329630ec873272d33b004626132c4"
   dependencies:
     sass-pathfinder "0.0.5"
     seed-breakpoints "^0.4.0"
