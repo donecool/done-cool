@@ -1,21 +1,18 @@
-<div class="o-container u-mrg-v-10">
-  <div class="o-flexy">
-    <div class="o-flexy__block">
-      <h1 class="tx-h3 tx-300">What's done?</h1>
-    </div>
-    <div class="o-flexy__block u-mrg-l-3">
-      <h1 class="tx-h3 tx-300">What's cool:</h1>
+<div class="o-container u-mrg-v-10 u-pad-v-5 u-pad-v-10@md">
+  <div class="o-row">
+    <div class="o-col-8@md o-col-offset-2@md o-col-6@lg o-col-offset-3@lg">
+      <h1 class="tx-h2 tx-300 u-mrg-b-3 tx-center">What's <strong class="tx-700">cool</strong></h1>
+
+      {{#each state.items key="@index" as |item index|}}
+        <div class="o-flexy o-flexy--gap-md u-mrg-b-2">
+          <div class="o-flexy__item">
+            <cool-item @text={{item}} />
+          </div>
+          <div class="o-flexy__block">
+            <input class="c-input" oninput={{action input index}} value={{item}} placeholder="What's done?">
+          </div>
+        </div>
+      {{/each}}
     </div>
   </div>
-
-  {{#each state.items key="@index" as |item index|}}
-    <div class="o-flexy u-mrg-b-2">
-      <div class="o-flexy__block">
-        <input class="c-input" oninput={{action input index}} value={{item}}>
-      </div>
-      <div class="o-flexy__block u-mrg-l-3">
-        <cool-item @text={{item}} />
-      </div>
-    </div>
-  {{/each}}
 </div>
