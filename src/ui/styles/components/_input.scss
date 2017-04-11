@@ -1,0 +1,30 @@
+// Components :: Index
+// Extends seed-input
+
+// Dependencies
+@import "../configs/color";
+
+.c-input {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  border-radius: 0;
+  transition: border 0.3s ease background-color 0.3s ease;
+
+  &:focus {
+    animation-name: blink;
+    animation-duration: 0.3s;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    border-bottom-color: $color-main;
+  }
+
+  @keyframes blink {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: rgba($color-main, 0.05);
+    }
+  }
+}
