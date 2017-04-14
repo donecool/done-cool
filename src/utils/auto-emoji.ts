@@ -1,3 +1,5 @@
+import emoji from 'emojilib';
+
 export default function AutoEmoji(text: string) : string {
-  return "😎";
+  return emoji.lib.grimacing.char;
 }

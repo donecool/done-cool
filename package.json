@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@glimmer/application": "^0.4.0",
-    "@glimmer/application-pipeline": "^0.5.2",
+    "@glimmer/application-pipeline": "^0.6.4",
     "@glimmer/component": "^0.3.8",
     "@glimmer/resolver": "^0.3.0",
     "ember-cli": "2.12.1",
@@ -28,6 +28,11 @@
   },
   "private": true,
   "dependencies": {
+    "@glimmer/blueprint": "^0.2.1",
+    "emojilib": "^2.2.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-json": "^2.1.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "seed-flexy": "^0.3.2",
     "seed-grid": "^0.4.0",
     "seed-harvester": "^0.1.5",
