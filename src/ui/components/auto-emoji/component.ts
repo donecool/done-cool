@@ -2,23 +2,9 @@ import Component, { tracked } from '@glimmer/component';
 import AutoEmoji from '../../../utils/auto-emoji';
 
 export default class CoolItem extends Component {
-  args: {
-    text: string
-  }
-
-  @tracked state = {
-    text: "",
-  }
-
-  @tracked("state")
+  @tracked("args")
   get emoji() {
-    return AutoEmoji(this.state.text);
-  }
-
-  didUpdate() {
-    this.state = {
-      ...this.state,
-      text: this.args.text
-    };
+    console.log("Calling AutoEmoji");
+    return AutoEmoji(this.args.text || '');
   }
 };
