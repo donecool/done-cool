@@ -6,7 +6,7 @@
       {{#each state.items key="@index" as |item index|}}
         <div class="o-flexy o-flexy--gap-md u-mrg-b-2">
           <div class="o-flexy__item">
-            <cool-item @text={{item}} />
+            <auto-emoji @text={{item}} />
           </div>
           <div class="o-flexy__block">
             <input class="c-input" oninput={{action input index}} value={{item}} placeholder="What's done?">
