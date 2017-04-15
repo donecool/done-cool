@@ -5,10 +5,10 @@ export default class DoneCool extends Component {
     items: [""]
   }
 
-  input(index, { target: { value }}) {
+  handleInput(index, value) {
     let items = this.state.items.slice();
 
-    items[index] = value
+    items[index] = value;
 
     if (items.every(i => i.length > 0)) {
       items.push("");

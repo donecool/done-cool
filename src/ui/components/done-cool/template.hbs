@@ -4,14 +4,10 @@
       <h1 class="tx-h2 tx-300 u-mrg-b-3 tx-center">What's <strong class="tx-700">cool</strong></h1>
 
       {{#each state.items key="@index" as |item index|}}
-        <div class="o-flexy o-flexy--gap-md u-mrg-b-2">
-          <div class="o-flexy__item">
-            <auto-emoji @text={{item}} />
-          </div>
-          <div class="o-flexy__block">
-            <input class="c-input" oninput={{action input index}} value={{item}} placeholder="What's done?">
-          </div>
-        </div>
+        <cool-item
+          @index={{index}}
+          @item={{item}}
+          @handleInput={{action handleInput}} />
       {{/each}}
     </div>
   </div>
