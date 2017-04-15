@@ -5,9 +5,8 @@
 
       {{#each state.items key="@index" as |item index|}}
         <cool-item
-          @index={{index}}
-          @item={{item}}
-          @handleInput={{action handleInput}} />
+          @text={{item}}
+          @onInput={{action onInput index}} />
       {{/each}}
     </div>
   </div>

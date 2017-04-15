@@ -2,10 +2,10 @@ import Component, { tracked } from "@glimmer/component";
 
 export default class DoneCool extends Component {
   @tracked state = {
-    items: [""]
+    items: ["horse", "chicken", ""]
   }
 
-  handleInput(index, value) {
+  onInput(index, value) {
     let items = this.state.items.slice();
 
     items[index] = value;
