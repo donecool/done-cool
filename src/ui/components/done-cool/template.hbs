@@ -2,10 +2,18 @@
   <div class="o-row">
     <div class="o-col-8@md o-col-offset-2@md o-col-6@lg o-col-offset-3@lg">
       <h1 class="tx-h2 tx-300 u-mrg-b-3 tx-center">What's <strong class="tx-700">cool</strong></h1>
+      <div class="u-mrg-b-6">
+        <cool-item
+          @text=""
+          @isAddInput="true"
+          @onEnter={{action onEnter}}
+          @onInput={{action onInput 0}} />
+      </div>
 
       {{#each state.items key="@index" as |item index|}}
         <cool-item
           @text={{item}}
+          @onEnter={{action refactorThis}}
           @onInput={{action onInput index}} />
       {{/each}}
     </div>
