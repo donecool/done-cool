@@ -23,4 +23,11 @@ export default class CoolItem extends Component {
     this.args.onInput(value);
     this.text = value;
   }
+
+  onKeyPress(event) {
+    if (event.keyCode === 13 && this.args.isAddInput) {
+      this.args.onEnter(this.text);
+      this.text = '';
+    }
+  }
 }
